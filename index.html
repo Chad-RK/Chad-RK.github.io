@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>landing - chad</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+    <link href="/res/main.css" rel="stylesheet" type="text/css"/>
+    <style>
+body {text-transform:none;}
+header {text-transform:lowercase;}
+a.button, a.button:visited {
+    text-decoration: none;
+
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 50px;
+
+    background: #060;
+    color: #AAA;
+    text-shadow: 1px 1px 1px black;
+
+    transition: opacity 750ms;
+}
+
+div.hideOnJS { transition: opacity 750ms; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chad.</h1>
+    </header>
+    <main>
+        <p style="margin:3em auto;">This website contains content not suitable for minors.</p>
+        <p>By entering this website, you agree to the following terms.</p>
+        <ul>
+            <li><strong>Yes.</strong> I am at least 18 years of age, or the respective age in my region to be viewing adult content.</li>
+            <li><strong>Yes.</strong> I understand that by entering this website I will be subjected to adult-oriented content, and agree to be shown this content.</li>
+            <li><strong>Yes.</strong> I agree to curtail the content I view on this website on my own terms. If I object to anything shown on the website, it is my own responsibility to cease viewing the content and exit the website immediately.</li>
+        </ul>
+        <div class="hideOnJS">
+            <p style="margin-top:3em;">In addition, by entering this site you agree implicitly to be shown adult-oriented content relevant to the following kinks and fetishes:</p>
+            <ul>
+                <li>Furries.</li>
+                <li>"Feral" or quadrupedal furries. <span class="small">All quadrupedal characters are always depicted as sentient, sapient, and intelligent. Quadrupedal characters are never depicted in situations with dubious or "unknowing" consent. There is no zoophilic content on this website.</span></li>
+                <li>Obesity.</li>
+                <li>Weight gain and extreme weight gain.</li>
+                <li>Exaggerated/"Hyper" genitalia and other sexual characteristics, such as breasts.</li>
+                <li>Exaggerated/"Hyper" muscular forms.</li>
+                <li>Inflation.</li>
+                <li>Voraphilia.</li>
+                <li>Macrophilia & microphilia.</li>
+                <li>Extreme sizes for any of the above, with no limit.</li>
+                <li>Animalistic genitalia, including barbs, knots, etc.</li>
+                <li>Multiple body parts and sexual characteristics, such as genitals, arms, tails, or breasts.</li>
+                <li>Oral kink, oral focus, and oral fixation.</li>
+                <li>Demons, gremlins, goblins, succubae, incubi, and other depictions of religious or fantastical monsters.</li>
+                <li>Humiliation and exhibitionism.</li>
+                <li>Bondage, often with laboratory-like settings.</li>
+                <li>Electrostimulation.</li>
+                <li>Struggling and immobility.</li>
+            </ul>
+            <p>Content that does not fall under these descriptors will be <strong>clearly labeled</strong> and you will be required to interact directly with links on the site if you wish to view them.</p>
+        </div>
+        <p class="centered" style="margin-top:2em;"><a href="main.html" class="button">I agree.</a></p>
+    </main>
+<script>'use strict';
+
+let disc = document.querySelector('div.hideOnJS');
+disc.style.opacity = '0';
+disc.style.display = 'none';
+
+let button = document.querySelector('a.button');
+button.setAttribute('href', '#');
+
+function disclaimerHandler() {
+    button.removeEventListener('click', disclaimerHandler);
+    button.style.opacity = 0;
+    // "I don't need promises for this" I said.
+    setTimeout(() => {
+        disc.style.display = 'block';
+        setTimeout(() => {
+            disc.style.opacity = '1';
+        }, 5);
+        setTimeout(() => {
+            button.style.opacity = 1;
+            button.setAttribute('href', 'main.html');
+        }, 1000);
+    }, 1000);
+}
+
+button.addEventListener('click', disclaimerHandler);
+</script>
+</body>
+</html>

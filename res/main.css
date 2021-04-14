@@ -1,0 +1,154 @@
+html {
+    background-color: #000;
+    color: #AAA;
+    font-size: 18pt;
+    font-family: sans-serif;
+}
+
+body {
+    /* wg/fat fetish */
+    --ff: rgb(141, 211, 141); /* fat */
+    --xff: rgb(0, 160, 0); /* xfat */
+    --imm: rgb(0, 65, 0); /* immobility */
+    /* room-sized */
+    /* building-sized */
+    /* skyscraper-sized */
+    /* city-sized */
+    /* country-sized */
+    /* continent-sized */
+    /* planet-crushing */
+    /* galactic+ */
+
+    --wg: rgb(0, 255, 236); /* weight gain */
+    
+    /* objectionable content */
+
+    --slob: rgb(255, 230, 0); /* slob/messy eating */
+    --farts: rgb(120, 139, 74); /* gas */
+    --med: white;
+
+    /* alt */
+
+    --vore: rgb(255, 0, 0); /* vore */
+    --hybr: rgb(255, 43, 131);/* hyper: breasts*/
+
+    /* monsters */
+    
+    --demons: rgb(100, 0, 0);
+    --feral: rgb(100, 100, 100);
+
+    /* sins */
+    --glut: rgb(74, 13, 172); /* gluttony */
+    
+    /* categories */
+    --tits: rgb(255, 119, 176);
+    --cocks: rgb(36, 89, 129);
+
+    /* alt fg color when contrast is needed */
+    --contrast: #161616;
+
+    margin: auto;
+    padding: 32px;
+    max-width:1024px;
+    text-transform:lowercase;
+}
+
+header {
+    margin: 24pt;
+}
+h1 {
+    font-size: 72pt;
+    margin: 0;
+}
+header a, header a:visited {
+    color: #AAA;
+}
+header p {
+    margin: 0.5em 0;
+}
+
+li {
+    margin: 1em 0;
+}
+
+p > img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+img.fullscreen {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 1000;
+}
+div.darkness {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 500;
+}
+
+.centered {
+    text-align: center;
+}
+.big{font-size:1.65em;}
+.small{font-size:0.6em;}
+
+a,a:visited{color:#88F;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.flex > * {
+    margin: 8px;
+}
+
+.variants {
+    font-size: 18pt;
+}
+
+.legend button, .variants a{
+    -webkit-appearance: none;
+    appearance: none;
+    text-transform: lowercase;
+
+    border-width: 1px;
+    border-style: solid;
+    margin: 8px;
+    font-size: 18pt;
+    color: #FFF;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+
+.cw {color:#F00; text-decoration: underline;}
+
+.ff{background-color:var(--ff);border-color:var(--ff);color:var(--contrast)!important}
+.xff{background-color:var(--xff);border-color:var(--xff)}
+.imm{background-color:var(--imm);border-color:var(--imm)}
+.wg{background-color:var(--wg);border-color:var(--wg);color:var(--contrast)!important}
+.slob{background-color:var(--slob);border-color:var(--slob);color:var(--contrast)!important}
+.farts{background-color:var(--farts);border-color:var(--farts)}
+.med{background-color: var(--med);border-color:var(--med);color:var(--contrast)!important}
+.vore{background-color:var(--vore);border-color:var(--vore)}
+.hybr{background-color:var(--hybr);border-color:var(--hybr)}
+.demons{background-color:var(--demons);border-color:var(--demons)}
+.feral{background-color:var(--feral);border-color:var(--feral)}
+.glut{background-color: var(--glut);border-color:var(--glut)}
+.tits{background-color: var(--tits);border-color:var(--tits);color:var(--contrast)!important}
+.cocks{background-color: var(--cocks);border-color:var(--cocks)}
+
+.disabled {
+    background-color: transparent !important;
+    color: #AAA !important;
+}

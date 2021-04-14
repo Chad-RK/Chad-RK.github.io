@@ -1,0 +1,35 @@
+.gallery {
+    border: 1px solid silver;
+}
+.gallery > div {
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+}
+.gallery a {
+    color: #AAA;
+    text-decoration: none;
+}
+
+.gallery .caption {
+    font-style: italic;
+}
+.gallery .caption time {
+    display: block;
+}
+.gallery img {
+    max-height: 200px;
+}
+
+div.markers {
+    font-size: 0;
+    display: flex;
+    border: 1px solid grey;
+    visibility: visible;
+    margin-top: 2pt;
+}
+div.markers > div {
+    height: 8px;
+    flex: 1;
+}
