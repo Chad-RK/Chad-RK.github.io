@@ -30,12 +30,16 @@ body {
     /* alt */
 
     --vore: rgb(255, 0, 0); /* vore */
-    --hybr: rgb(255, 43, 131);/* hyper: breasts*/
+    --hboobs: rgb(255, 43, 131);/* hyper: breasts*/
+    --hcock: rgb(19, 127, 209); /* hyper: penis */
+    --hballs: rgb(15, 105, 173); /* hyper: testicles */
+    --hmuscle: rgb(175, 39, 39); /* hyper: muscle */
 
     /* monsters */
     
     --demons: rgb(100, 0, 0);
     --feral: rgb(100, 100, 100);
+    --pokemon: rgb(255, 230, 0);
 
     /* sins */
     --glut: rgb(74, 13, 172); /* gluttony */
@@ -43,6 +47,7 @@ body {
     /* categories */
     --tits: rgb(255, 119, 176);
     --cocks: rgb(36, 89, 129);
+    --balls: rgb(31, 74, 107);
 
     /* alt fg color when contrast is needed */
     --contrast: #161616;
@@ -136,17 +141,28 @@ a,a:visited{color:#88F;}
 .ff{background-color:var(--ff);border-color:var(--ff);color:var(--contrast)!important}
 .xff{background-color:var(--xff);border-color:var(--xff)}
 .imm{background-color:var(--imm);border-color:var(--imm)}
+
 .wg{background-color:var(--wg);border-color:var(--wg);color:var(--contrast)!important}
+.vore{background-color:var(--vore);border-color:var(--vore)}
+
 .slob{background-color:var(--slob);border-color:var(--slob);color:var(--contrast)!important}
 .farts{background-color:var(--farts);border-color:var(--farts)}
 .med{background-color: var(--med);border-color:var(--med);color:var(--contrast)!important}
-.vore{background-color:var(--vore);border-color:var(--vore)}
-.hybr{background-color:var(--hybr);border-color:var(--hybr)}
+
+.hboobs{background-color:var(--hboobs);border-color:var(--hboobs)}
+.hcock{background-color:var(--hcock);border-color:var(--hcock)}
+.hballs{background-color:var(--hballs);border-color:var(--hballs)}
+.hmuscle{background-color:var(--hmuscle);border-color:var(--hmuscle)}
+
 .demons{background-color:var(--demons);border-color:var(--demons)}
+.pokemon{background-color:var(--pokemon);border-color:var(--pokemon);color:var(--contrast)!important}
 .feral{background-color:var(--feral);border-color:var(--feral)}
+
 .glut{background-color: var(--glut);border-color:var(--glut)}
+
 .tits{background-color: var(--tits);border-color:var(--tits);color:var(--contrast)!important}
 .cocks{background-color: var(--cocks);border-color:var(--cocks)}
+.balls{background-color: var(--balls);border-color:var(--balls)}
 
 .disabled {
     background-color: transparent !important;
