@@ -4,6 +4,7 @@
 .gallery > div {
     padding: 5px;
     margin: 10px;
+    max-width: 600px;
 
     text-align: center;
 }
@@ -19,17 +20,24 @@
     display: block;
 }
 .gallery img {
-    max-height: 200px;
+    height: 200px;
 }
 
 div.markers {
-    font-size: 0;
+    font-size: 12px;
     display: flex;
     border: 1px solid grey;
     visibility: visible;
     margin-top: 2pt;
+    color:white;
+    flex-wrap: wrap;
 }
 div.markers > div {
-    height: 8px;
+    height: auto;
+    padding: 5px;
+    min-width: 80px;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
