@@ -30,6 +30,7 @@ body {
     /* alt */
 
     --vore: rgb(255, 0, 0); /* vore */
+    --tf: rgb(209, 100, 236); /* tf */
     --hboobs: rgb(255, 43, 131);/* hyper: breasts*/
     --hcock: rgb(19, 127, 209); /* hyper: penis */
     --hballs: rgb(15, 105, 173); /* hyper: testicles */
@@ -40,6 +41,7 @@ body {
     --demons: rgb(100, 0, 0);
     --feral: rgb(100, 100, 100);
     --pokemon: rgb(255, 230, 0);
+    --hybrid: rgb(234, 78, 255);
 
     /* sins */
     --glut: rgb(74, 13, 172); /* gluttony */
@@ -48,19 +50,24 @@ body {
     --tits: rgb(255, 119, 176);
     --cocks: rgb(36, 89, 129);
     --balls: rgb(31, 74, 107);
+    --darkcomedy: rgb(99, 39, 21);
 
     /* alt fg color when contrast is needed */
     --contrast: #161616;
 
-    margin: auto;
-    padding: 32px;
-    max-width:1280px;
     text-transform:lowercase;
 }
 
-header {
-    margin: 24pt;
+header, main {
+    margin: auto;
+    padding: 32px;
+    max-width:1280px;
 }
+
+header {
+    padding: 24pt;
+}
+
 h1 {
     font-size: 72pt;
     margin: 0;
@@ -144,6 +151,7 @@ a,a:visited{color:#88F;}
 
 .wg{background-color:var(--wg);border-color:var(--wg);color:var(--contrast)!important}
 .vore{background-color:var(--vore);border-color:var(--vore)}
+.tf{background-color:var(--tf);border-color:var(--tf)}
 
 .slob{background-color:var(--slob);border-color:var(--slob);color:var(--contrast)!important}
 .farts{background-color:var(--farts);border-color:var(--farts)}
@@ -153,6 +161,7 @@ a,a:visited{color:#88F;}
 .hcock{background-color:var(--hcock);border-color:var(--hcock)}
 .hballs{background-color:var(--hballs);border-color:var(--hballs)}
 .hmuscle{background-color:var(--hmuscle);border-color:var(--hmuscle)}
+.hybrids{background-color:var(--hybrid);border-color:var(--hybrid)}
 
 .demons{background-color:var(--demons);border-color:var(--demons)}
 .pokemon{background-color:var(--pokemon);border-color:var(--pokemon);color:var(--contrast)!important}
@@ -163,6 +172,7 @@ a,a:visited{color:#88F;}
 .tits{background-color: var(--tits);border-color:var(--tits);color:var(--contrast)!important}
 .cocks{background-color: var(--cocks);border-color:var(--cocks)}
 .balls{background-color: var(--balls);border-color:var(--balls)}
+.darkcomedy{background-color: var(--darkcomedy);border-color:var(--darkcomedy)}
 
 .disabled {
     background-color: transparent !important;
