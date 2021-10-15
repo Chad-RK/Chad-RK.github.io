@@ -125,10 +125,6 @@ a,a:visited{color:#88F;}
     margin: 8px;
 }
 
-.variants {
-    font-size: 18pt;
-}
-
 .legend button, .variants a{
     -webkit-appearance: none;
     appearance: none;
@@ -136,11 +132,15 @@ a,a:visited{color:#88F;}
 
     border-width: 1px;
     border-style: solid;
-    margin: 8px;
-    font-size: 18pt;
+    margin: 2px;
+    font-size: 12pt;
     color: #FFF;
     text-decoration: none;
     padding: 4px 8px;
+}
+
+.variants, .variants a{
+    font-size: 18pt;
 }
 
 .cw {color:#F00; text-decoration: underline;}

@@ -41,3 +41,12 @@ div.markers > div {
     align-items: center;
     justify-content: center;
 }
+
+.legend {
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: 12pt;
+    margin: 1em 0 0.2em;
+}

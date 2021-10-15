@@ -1,5 +1,8 @@
 'use strict';
 
+let gallery = document.querySelector('.gallery');
+let kinkLists = document.querySelectorAll('.legend');
+
 let disabledKinks = ['slob']
 
 function buttonToggle(e) {
@@ -14,15 +17,15 @@ function buttonToggle(e) {
     }
     if (kink == '') { throw Error; }
 
-    let kinkpos = disabledKinks.indexOf(kink);
+    let kinkPos = disabledKinks.indexOf(kink);
 
-    if (kinkpos == -1) {
+    if (kinkPos == -1) {
         // add kink to list
         disabledKinks.push(kink);
         el.classList.add('disabled');
     } else {
         // remove kink from list
-        disabledKinks.splice(kinkpos, 1);
+        disabledKinks.splice(kinkPos, 1);
         el.classList.remove('disabled');
     }
 
@@ -30,7 +33,7 @@ function buttonToggle(e) {
 }
 
 function updateVisibleKinks() {
-    for (let element of document.querySelector('.gallery').children) {
+    for (let element of gallery.children) {
         let hide = false;
         for (let el of element.querySelector('.markers').children) {
             for (let item of disabledKinks) {
@@ -45,15 +48,16 @@ function updateVisibleKinks() {
 }
 
 function main() {
-    for (let element of document.querySelector('.legend').children) {
-        for (let x of disabledKinks) {
-            if (element.classList.contains(x)) {
-                element.classList.add('disabled');
+    for (let kinkList of kinkLists) {
+        for (let element of kinkList.children) {
+            for (let x of disabledKinks) {
+                if (element.classList.contains(x)) {
+                    element.classList.add('disabled');
+                }
             }
+            element.addEventListener('click', buttonToggle);
         }
-        element.addEventListener('click', buttonToggle);
     }
-
     updateVisibleKinks();
 }
 
